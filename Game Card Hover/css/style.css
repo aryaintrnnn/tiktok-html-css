@@ -1,0 +1,128 @@
+/* *{
+    background-color: black;
+} */
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: slategrey;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.container .kartu{
+    position: relative;
+    width: 500px;
+    height: 230px;
+    padding: 15px;
+    background: linear-gradient(45deg, #26DCCA 0%, #2ab1ff 100%);
+    overflow: hidden;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.container .kartu h2{
+    z-index: 99;
+    position: absolute;
+    bottom: 25px;
+    right: 130px;
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.3s ease;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.container .kartu p{
+    z-index: 99;
+    position: absolute;
+    bottom: 30px;
+    right: 130px;
+    width: 150px;
+    opacity: 0;
+    font-size: 12px;
+    color: #fff;
+    text-align: right;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}
+
+.container .kartu span{
+    z-index: 99;
+    position: absolute;
+    top: 60px;
+    right: 35px;
+    font-size: 12px;
+    color: #fff;
+    transition: 0.3s ease;
+    letter-spacing: 1px;
+    writing-mode: vertical-lr;
+    opacity: 0.5;
+}
+
+.container .kartu .gmbr{
+    z-index: 100;
+    width: 395px;
+    height: 230px;
+    background-image: url('https://cdn.oneesports.gg/cdn-data/2021/08/MLBB_Aamon.jpg');
+    background-size: cover;
+    border-radius: 12px;
+    filter: grayscale(100%);
+    transition: 0.3s ease;
+}
+
+.container .kartu button{
+    position: absolute;
+    right: 30px;
+    bottom: 40px;
+    width: 30px;
+    height: 30px;
+    background-color: aquamarine;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    outline: none;
+    opacity: 1;
+    transition: 0.3s ease;
+}
+
+.container .kartu:hover button{
+    transform: scale(15.2);
+    opacity: 0.5;
+}
+
+.container .kartu:hover h2{
+    bottom: 80px;
+    right: 50px;
+}
+
+.container .kartu:hover p{
+    padding-bottom: 10px;
+    right: 60px;
+    opacity: 1;
+}
+
+.container .kartu:hover span{
+    top: 80px;
+    opacity: 0;
+}
+
+.container .kartu:hover .gmbr{
+    filter: grayscale(0%);
+    width: 500px;
+}
+
+.container .kartu2 .gmbr{
+    background-image: url('https://d1x91p7vw3vuq8.cloudfront.net/itemku-upload/2022924/0gsi5rvtccr1g8cx2dzsxjj.jpg');
+    transition: 0.3s ease;
+}
+
+.container .kartu2 .button{
+    background-color: aquamarine;
+}
